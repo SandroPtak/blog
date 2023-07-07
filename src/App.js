@@ -28,7 +28,7 @@ function App() {
       <Routes>
         <Route path="/pagina-inicial" element={<Home/>}/>
         <Route path="/acessar" element={<Login setIsAuth={setIsAuth}/>}/>
-        <Route path="/criar-post" element={<CreatePost/>}/>
+        {isAuth && <Route path="/criar-post" element={<CreatePost/>}/>}
         <Route path="*" element={<Navigate to="/pagina-inicial"/>}/>
       </Routes>
     </Router>

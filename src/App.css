@@ -24,6 +24,7 @@ nav button {
   color: white;
   border: none;
   font-size: 25px;
+  cursor: pointer;
 }
 
 a {
